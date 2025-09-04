@@ -1,0 +1,132 @@
+/* Add these styles to your existing Booking.module.css */
+
+/* Booking Form Page */
+.formSection {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.formBox {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.formBox h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.formLabel {
+  font-weight: 500;
+  color: #444;
+}
+
+.submitButton {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #fff;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitButton:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Booking Hero */
+.heroSection {
+  position: relative;
+  height: 60vh;
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.heroSubtitle {
+  font-size: 1.7rem;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Contact Assistance */
+.contactAssistance h2 {
+  font-size: 2rem;
+}
+
+.contactOption {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactOption:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.heroLine {
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  .formRow {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .heroTitle {
+    font-size: 2rem;
+  }
+  
+  .heroLine {
+    font-size: 1.2rem;
+  }
+  
+  .contactOptions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contactOption {
+    width: 100%;
+    max-width: 300px;
+  }
+}

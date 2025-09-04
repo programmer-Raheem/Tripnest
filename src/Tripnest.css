@@ -1,0 +1,182 @@
+/* Transparent background for Navbar */
+.bg-transparent-custom {
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+}
+
+/* Logo styling */
+.tripnest-logo {
+  height: 50px;         /* Adjust size */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tripnest-logo:hover {
+  transform: scale(1.1); /* Subtle hover effect */
+}
+
+/* Navbar Toggler */
+.tripnest-navbar .navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Navbar Links */
+.tripnest-nav-link {
+  font-weight: 500;
+  color: #fff !important;
+  padding: 8px 16px; 
+  border-radius: 25px; 
+  transition: all 0.3s ease-in-out;
+}
+
+.tripnest-nav-link:hover {
+  background-color: #0d6efd; 
+  color: #fff !important;
+}
+
+/* Hero Section */
+.tripnest-hero {
+  height: 100vh;  
+  background:  no-repeat center center/cover !important;
+  position: relative;
+  display: flex;
+  justify-content: center;  
+  align-items: center;       
+  text-align: center;        
+}
+
+.tripnest-hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+}
+
+.tripnest-hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+.tripnest-subtitle {
+  letter-spacing: 2px;
+}
+
+.tripnest-title {
+  line-height: 1.2;
+}
+
+.tripnest-hero h2 {
+  margin-top: 25px;
+}
+
+/* Gradient Button */
+.tripnest-btn-gradient {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); 
+  color: white;
+  border: none;
+}
+
+.tripnest-btn-gradient:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: white;
+}
+
+/* Booking Form Page */
+.tripnest-form-section {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin-left: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tripnest-form-box {
+  background: #fff;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.tripnest-form-box h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.tripnest-form-label {
+  font-weight: 500;
+  color: #444;
+}
+
+.tripnest-btn-submit {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b);
+  color: #fff;
+  border: none;
+}
+
+.tripnest-btn-submit:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: #fff;
+}
+
+/* Booking Hero */
+.tripnest-booking-hero {
+  position: relative;
+  height: 60vh; 
+  background: url("/public/booking2.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tripnest-booking-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.tripnest-hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color:#333;
+}
+
+.tripnest-hero-subtitle {
+  font-size: 1.7rem;
+  color: #ffffff;
+}
+
+/* Contact Assistance */
+.tripnest-contact-assistance h2 {
+  font-size: 2rem;
+}
+
+.tripnest-contact-assistance .shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tripnest-contact-assistance .shadow:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.tripnest-heroline {
+  font-size: 1.7rem;
+  color: #ffffff;
+}

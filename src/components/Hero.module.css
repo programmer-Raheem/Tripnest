@@ -1,0 +1,71 @@
+/* Add these styles to your existing Hero.module.css */
+.hero {
+  height: 100vh;  
+  position: relative;
+  display: flex;
+   background-size: cover;        /* image covers entire container */
+  background-position: center;   /* center the image */
+  background-repeat: no-repeat;  /* don’t repeat image */
+  justify-content: center;  
+  align-items: center;       
+  text-align: center;     
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.4); 
+}
+
+.heroContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  margin-top: 25px;
+  color: #ffc107;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title {
+  line-height: 1.2;
+  font-weight: 700;
+  font-size: 3.5rem;
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+.ctaButton {
+  background: linear-gradient(45deg, #ff416c, #ff4b2b); 
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: linear-gradient(45deg, #ff4b2b, #ff416c);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .ctaButton {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
