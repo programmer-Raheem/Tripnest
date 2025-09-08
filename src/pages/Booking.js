@@ -1,16 +1,16 @@
 import React from "react";
-import "../Tripnest.css";
+import "./Booking.css";
 
 const Booking = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="tripnest-booking-hero">
-        <div className="tripnest-booking-hero-overlay">
+      <section className="tripnest-hero">
+        <div className="tripnest-hero-overlay">
           <h1 className="tripnest-hero-title text-primary">
             Plan Your Perfect Journey
           </h1>
-          <p className="tripnest-heroline">
+          <p className="tripnest-hero-line">
             Tell us about your dream destination and travel preferences.
           </p>
         </div>
@@ -123,7 +123,7 @@ const Booking = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="btn btn-primary px-4 py-2 rounded-pill"
+                className="tripnest-btn-submit btn px-4 py-2 rounded-pill"
               >
                 <i className="fa-solid fa-paper-plane me-2"></i> Submit
               </button>
@@ -145,7 +145,7 @@ const Booking = () => {
 
           <div className="row justify-content-center g-4">
             <div className="col-md-4">
-              <div className="p-5 pt-lg-5 shadow rounded bg-white">
+              <div className="p-5 pt-lg-5 shadow rounded bg-white tripnest-hover-card">
                 <h5 className="fw-bold text-primary">
                   <a href="#" className="text-primary text-decoration-none">
                     Call us
@@ -160,7 +160,7 @@ const Booking = () => {
             </div>
 
             <div className="col-md-4">
-              <div className="p-5 pt-lg-5 shadow rounded bg-white">
+              <div className="p-5 pt-lg-5 shadow rounded bg-white tripnest-hover-card">
                 <h5 className="fw-bold text-primary">
                   <a href="#" className="text-primary text-decoration-none">
                     Email Us

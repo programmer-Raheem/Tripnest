@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tripnest/static/css/main.05536d39.css",
+    "main.js": "/Tripnest/static/js/main.f868471d.js",
+    "static/media/trump.jpg": "/Tripnest/static/media/trump.ee113b30a9ae9c4f3b81.jpg",
+    "static/media/booking2.jpg": "/Tripnest/static/media/booking2.ed0b11459db3e5df2622.jpg",
+    "index.html": "/Tripnest/index.html",
+    "main.05536d39.css.map": "/Tripnest/static/css/main.05536d39.css.map",
+    "main.f868471d.js.map": "/Tripnest/static/js/main.f868471d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.05536d39.css",
+    "static/js/main.f868471d.js"
+  ]
+}
