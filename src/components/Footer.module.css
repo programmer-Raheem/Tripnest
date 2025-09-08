@@ -1,0 +1,76 @@
+.siteFooter {
+  width: 100%;
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(135deg, #0d6efd, #6f42c1, #ff416c);
+  background-size: 300% 300%;
+  animation: gradientAnimation 12s ease infinite;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footerContent {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerContent p {
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.socialLinks {
+  margin-bottom: 10px;
+}
+
+.socialLinks a {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  line-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.socialLinks a i {
+  font-size: 1.2rem;
+}
+
+.socialLinks a:hover {
+  transform: translateY(-4px) scale(1.1);
+}
+
+/* ✅ Force Font Awesome icons to keep their colors */
+:global(.fa-instagram) {
+  color: #E1306C !important;
+}
+
+:global(.fa-facebook-f) {
+  color: #1877F2 !important;
+}
+
+:global(.fa-tiktok) {
+  color: #000000 !important;
+}
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@media (max-width: 768px) {
+  .socialLinks a {
+    margin: 0 5px;
+  }
+}
